@@ -1,0 +1,148 @@
+/* Variables */
+:root {
+    --primary-color: #1A8442;
+    --secondary-color: #37C8EC;
+    --transition: all 0.3s ease;
+    
+    --primari-color: #F9900F;
+    --secondari-color: #0F0000;
+    --dark-color: #0F0000;
+    --light-color: #f4f4f4;
+}
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-120%);
+    width: 90px;
+    height: 3px;
+}
+
+.py-5{
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    
+    /* Ajustement des marges en mode mobile */
+    .py-5 {
+        padding-top: 4rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+
+
+
+/* Container styles */
+.about-container {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Text content styles */
+.text-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.about-text ul {
+    list-style-position: inside;
+    margin: 1rem 0 2rem 1rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Image styles */
+.image-content {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+    .content-wrapper {
+        gap: 1.5rem;
+    }
+    
+    .text-content {
+        padding-right: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .text-content {
+        padding-right: 0;
+    }
+    
+    .image-content {
+        position: relative;
+        top: 0;
+        order: -1; /* Places image above text on mobile */
+        margin-bottom: 2rem;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+}
