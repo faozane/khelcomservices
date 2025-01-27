@@ -15,6 +15,9 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 h2 {
     text-align: center;
@@ -31,6 +34,7 @@ h2::after {
     transform: translateX(-120%);
     width: 90px;
     height: 3px;
+    background: var(--primary-color);
 }
 
 .py-5{
@@ -73,6 +77,7 @@ h2::after {
 
 h2 {
     font-size: 1.8rem;
+    color: #2c5282;
     margin: 2rem 0 1rem;
 }
 
@@ -140,6 +145,11 @@ h2 {
         top: 0;
         order: -1; /* Places image above text on mobile */
         margin-bottom: 2rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     
     .about-text p {
