@@ -1,33 +1,32 @@
-$('#contact-form').on('submit', function(e) {
+// contact.js
+document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const formData = {
-        nom: $('input[name="nom"]').val(),
-        prenom: $('input[name="prenom"]').val(),
-        structure: $('input[name="structure"]').val(),
-        email: $('input[name="mail"]').val(),
-        structure: $('input[name="structure"]').val(),
-        objet: $('input[name="objet"]').val(),
-        message: $('textarea[name="message"]').val()
-    };
-
-    // Configuration pour EmailJS
-    emailjs.init("VOTRE_USER_ID");
-    
-    emailjs.send("service_id", "template_id", {
-        to_email: "bidemiamoussa@gmail.com",
-        from_name: `${formData.email} ${formData.prenom} ${formData.nom}`,
-        structure: formData.structure,
-        subject: formData.objet,
-        message: formData.message
-    })
-    .then(
-        function(response) {
-            alert("Message envoyé avec succès!");
-            $('#contact-form')[0].reset();
-        },
-        function(error) {
-            alert("Une erreur s'est produite. Veuillez réessayer.");
-        }
+    const inputs = Array.from(this.elements).filter(element => 
+        element.tagName === 'INPUT' || element.tagName === 'TEXTAREA'
     );
+
+    let isValid = true;
+    
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            input.classList.add('is-invalid');
+            isValid = false;
+        } else {
+            input.classList.remove('is-invalid');
+        }
+    });
+
+    if (isValid) {
+        this.submit();
+    }
+});
+
+// Gestion des erreurs en temps réel
+document.querySelectorAll('.form-control').forEach(input => {
+    input.addEventListener('input', function() {
+        if (this.value.trim()) {
+            this.classList.remove('is-invalid');
+        }
+    });
 });
