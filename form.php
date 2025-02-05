@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "Khelcomservicessenegal@gmail.com";
     $subject = htmlspecialchars($_POST['objet']);
-    
+
     $message = "Nouveau message de :\n";
     $message .= "Nom: " . htmlspecialchars($_POST['nom']) . "\n";
     $message .= "Prénom: " . htmlspecialchars($_POST['prenom']) . "\n";
@@ -22,4 +22,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     header("Location: index.html");
 }
-?>
