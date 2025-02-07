@@ -377,6 +377,29 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+
+.hidden-phone a {
+    text-decoration: none;
+    /* Supprime le soulignement */
+    color: inherit;
+    /* Adopte la couleur du texte environnant */
+    font-size: 0.9em;
+    /* Réduit légèrement la taille du texte */
+    opacity: 0.7;
+    /* Rend le texte légèrement transparent */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden-phone a:hover {
+    opacity: 1;
+    /* Rend le lien complètement visible au survol */
+    color: #0078d4;
+    /* Ajoute un effet visuel subtil au survol */
+}
+
+
+
+
 /* Animations */
 @keyframes fadeInUp {
     from {
