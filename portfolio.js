@@ -44,64 +44,95 @@ $('#navbar-container').html(navbarContent);
 const portfolioItems = [
     {
         category: 'forage',
-        image: 'fora 1.jpg',
+        image: 'IMG_20230526_171611(1).jpg',
         title: 'Forage profond',
-        description: 'Installation de forage pour village'
+        description: 'Developpement par Air Lift'
     },
     {
         category: 'forage',
-        image: 'fora 2.jpg',
+        image: 'Screenshot_20250304-234054.jpg',
         title: 'Mini-forage agricole',
         description: 'Système d\'irrigation pour exploitation'
     },
     {
-        category: 'forage',
-        image: 'fora 3.jpg',
-        title: 'Mini-forage agricole',
-        description: 'Système d\'irrigation pour exploitation'
+        category: 'forage', 
+        image: 'cfa1985b-8e8d-41ff-9755-ccc120e7c183.jpg',
+        title: 'Forage industriel',
+        description: 'Foration Rotary'
     },
     {
         category: 'forage',
-        image: 'fora 4.jpg',
-        title: 'Mini-forage agricole',
-        description: 'Système d\'irrigation pour exploitation'
+        image: 'IMG_20230207_185245.jpg',
+        title: 'Forage Semi-Profond',
+        description:  'Essais de pompage forage'
     },
     {
         category: 'solaire',
-        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276',
+        image: '20200519_142606.jpg',
         title: 'Panneaux solaires',
-        description: 'Installation pour entreprise'
+        description: 'Installation pour un domaine agricole'
     },
     {
         category: 'solaire',
-        image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d',
+        image: 'bf673855-c2b2-451c-a062-928b88b67177.jpg',
+        title: 'Panneaux solaires',
+        description: 'Installation pour pompe solaire'
+    },
+    {
+        category: 'solaire', // img a modifier
+        image: '.jpg',
         title: 'Éclairage solaire',
         description: 'Système d\'éclairage rural'
     },
     {
-        category: 'hydro',
-        image: 'IMG-8995-scaled.jpg',
+        category: 'hydro', // img a modifier
+        image: '.jpg',
         title: 'Irrigation goutte-à-goutte',
         description: 'Système d\'irrigation moderne'
     },
     {
         category: 'hydro',
-        image: 'https://images.unsplash.com/photo-1622383563227-04401ab4e5ea',
+        image: 'IMG_20231021_171058.jpg',
         title: 'Pompage solaire',
         description: 'Installation hydro-agricole'
     },
     {
         category: 'sondage',
-        image: 'hydr1.jpg',
+        image: 'IMG_20221026_171151.jpg',
         title: 'Étude géophysique',
         description: 'Analyse du terrain'
     },
     {
         category: 'sondage',
-        image: 'hydr1.webp',
-        title: 'Cartographie',
-        description: 'Étude hydrogéologique'
-    }
+        image: 'IMG_20220615_124726(1).jpg',
+        title: 'Étude géophysique',
+        description: 'Analyse du terrain'
+    },
+    {
+        category: 'sondage', 
+        image: '1698685371780.png',
+        title: 'Sondage géophysique',
+        description: 'Scanner des nappes souterraines'
+    },
+    {
+        category: 'fourniture', 
+        image: '1709646661493.png',
+        title: 'PH-metre',
+        description: 'Testeur d\'eau à plusieurs parametres'
+    },
+    {
+        category: 'fourniture', 
+        image: '1709664702492.png',
+        title: 'Sonde piézometrique',
+        description: 'Mesure de niveau d\'eau'
+    },
+    {
+        category: 'fourniture', 
+        image: '1707761753888.png',
+        title: 'Appareil de sondagge géophysique',
+        description: 'Détection de nappes d\'eau'
+    },
+    
 ];
 
 function renderPortfolio(items) {
