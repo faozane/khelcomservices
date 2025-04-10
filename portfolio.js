@@ -80,21 +80,21 @@ const portfolioItems = [
     },
     {
         category: 'solaire', // img a modifier
-        image: '.jpg',
-        title: 'Éclairage solaire',
-        description: 'Système d\'éclairage rural'
+        image: 'IMG_20231021_171058.jpg',
+        title: 'Pompage solaire',
+        description: 'Installation hydro-agricole'
     },
     {
         category: 'hydro', // img a modifier
-        image: '.jpg',
+        image: 'IMG_20220630_152140.jpg',
         title: 'Irrigation goutte-à-goutte',
         description: 'Système d\'irrigation moderne'
     },
     {
         category: 'hydro',
-        image: 'IMG_20231021_171058.jpg',
-        title: 'Pompage solaire',
-        description: 'Installation hydro-agricole'
+        image: 'IMG_20241105_162211_174.jpg',
+        title: 'Resau d\'irigation',
+        description: 'System d\'arrosage agricole'
     },
     {
         category: 'sondage',
