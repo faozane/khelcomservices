@@ -3,7 +3,7 @@ const navbarContent = `
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="Logo K2S 1.png" alt="Logo" class="logo">
+                <img src="Images/Logo K2S 1.png" alt="Logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -143,7 +143,7 @@ function renderPortfolio(items) {
         grid.append(`
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="portfolio-item" data-category="${item.category}">
-                    <img src="${item.image}" class="img-fluid" alt="${item.title}">
+                    <img src="Images/${item.image}" class="img-fluid" alt="${item.title}">
                     <div class="portfolio-overlay">
                         <div class="text-white text-center">
                             <h5>${item.title}</h5>
